@@ -1,7 +1,8 @@
 Game ideas:
 
-1: 3d O's and X's
-2: Wordle Encrypted
-3: Random Story Generator
-4: Random Game Generator
+1: 3d O's and X's - 3 Dimensional O's and X's
+2: Wordle Encrypted - Game generates word by given word size, encrypts it, user guesses and decrypts
+3: Random Story Generator - A game that generates a story depending on given parameters
+4: Random Game Generator - A game that randomly generates a game, the rules of the given games are also random
 5. galaxia type game
+6: Dice-based 301/501 Game - Dart board game turned dice game
