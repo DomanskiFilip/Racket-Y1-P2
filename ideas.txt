@@ -4,3 +4,4 @@ Game ideas:
 2: Wordle Encrypted
 3: Random Story Generator
 4: Random Game Generator
+5. galaxia type game
