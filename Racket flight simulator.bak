@@ -16,31 +16,22 @@
     (vector-set! obstacle-row (random 3) 1)
     (list obstacle-row (make-vector 3 0))))
 
-(define (move-player-stay button event)
-  (displayln "Stay Called")
-  (continue-game)
-  (send frame show #f)) ; Close the frame after button press
-
 (define (move-player-left button event)
   (displayln "Move Left Called")
   (set! player-position (- player-position 1))
-  (if (= player-position -1)
-      (begin
-        (set! player-position 0)
-        (displayln "Cannot move further that way"))
-      (continue-game))
+  (continue-game)
   (send frame show #f)) ; Close the frame after button press
 
 (define (move-player-right button event)
   (displayln "Move Right Called")
   (set! player-position (+ player-position 1))
-  (if (= player-position 3)
-      (begin
-        (set! player-position 2)
-        (displayln "Cannot move further that way"))
-      (continue-game))
-  (send frame show #f)); Close the frame after button press
+  (continue-game)
+  (send frame show #f)) ; Close the frame after button press
 
+(define (move-player-stay button event)
+  (displayln "Stay Called")
+  (continue-game)
+  (send frame show #f)) ; Close the frame after button press
 
 (define (start-game-round)
   (if (= current-row 5) ; Check if the player reached the end
